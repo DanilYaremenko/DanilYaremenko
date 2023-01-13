@@ -16,21 +16,65 @@
 | 🟩 heap              | 🟩 for                | 🟩 lambda             | 🟩 stack            | 🟩 complexity        |
 | 🟩 type              | 🟩 for..in            | 🟩 side effects       | 🟩 deque            | 🟩 decomposition     |
 | 🟩 primitive types   | 🟩 for..of            | 🟩 closure            | 🟩 serialization    | 🟩 spaghetti         |
-| 🟩 reference         | 🟨 for await          | 🟩 partial            | 🟦 mixin, extend    | 🟩 silver bullet     |
-| 🟩 flag              | 🟩 throw              | ⬜️ curry              | 🟩 iterator         | 🟩 not invented here |
-| 🟩 lexical scope     | 🟩 try..catch         | 🟩 chaining           | 🟨 typed arrays     | 🟩 dead code         |
+| 🟩 reference         | 🟨 for await          | 🟩 partial            | 🟩 mixin, extend    | 🟩 silver bullet     |
+| 🟩 flag              | 🟩 throw              | 🟩 curry              | 🟩 iterator         | 🟩 not invented here |
+| 🟩 lexical scope     | 🟩 try..catch         | 🟩 chaining           | 🟩 typed arrays     | 🟩 dead code         |
 | 🟩 code block        | 🟩 equality operators | 🟩 higher order       | 🟩 Map              | 🟩 unreachable code  |
 | 🟩 Object            | 🟩 logical operators  | 🟩 callback           | 🟩 Set              | 🟩 duplicate code    |
-| 🟩 this              | 🟩 bitwise operators  | 🟩 listener           | ⬜️ weak collections | 🟩 exception         |
-| 🟩 arrow function    | 🟩 break, continue    | ⬜️ pipe               | ⬜️ Proxy            | 🟩 return early      |
-| 🟩 generator         | 🟩 switch             | ⬜️ memoize            | ⬜️ Symbol           | 🟩 linter            |
+| 🟩 this              | 🟩 bitwise operators  | 🟩 listener           | 🟩 weak collections | 🟩 exception         |
+| 🟩 arrow function    | 🟩 break, continue    | 🟩 pipe               | 🟩 Proxy            | 🟩 return early      |
+| 🟩 generator         | 🟩 switch             | 🟩 memoize            | 🟩 Symbol           | 🟩 linter            |
 | 🟩 async function    | 🟩 new Error          | 🟩 factory            | 🟩 string parsing   | 🟩 prettier          |
-| 🟨 call, bind, apply |                       | 🟩 pool               | 🟩 timers           | 🟦 unittest          |
-| 🟩 Array             |                       | 🟩 wrapper            | 🟨 EventEmitter     | 🟩 git               |
+| 🟩 call, bind, apply |                       | 🟩 pool               | 🟩 timers           | 🟩 unittest          |
+| 🟩 Array             |                       | 🟩 wrapper            | 🟩 EventEmitter     | 🟩 git               |
 | 🟩 instanceof        |                       | 🟩 default parameters | 🟩 RegExp           | 🟩 github            |
 | 🟩 ...spread         |                       |                       | 🟩 global           | 🟩 node.js           |
 | 🟩 ...rest           |                       |                       | 🟩 undefined        | 🟩 npm               |
 | 🟩 typeof            |                       |                       | 🟩 null             |                      |
+
+###  React
+
+| Main concepts                | hooks          | antipatterns                                 | environment             |
+| ---------------------------- | -------------- | -------------------------------------------- | ----------------------- |
+| 🟩 JSX                        | 🟩 useState     | 🟩 Props drilling                             | 🟩 React Router          |
+| 🟩 Virtual DOM                | 🟩 useEffect    | 🟩 Props Plowing                              | 🟩 React-Redux           |
+| 🟩 Functional component       | 🟩 useReducer   | 🟩 Props mutation                             | 🟩 React Dom             |
+| 🟩 Class component            | 🟩 useContext   | 🟩 setState() is async                        | 🟩 Redux Thunk           |
+| 🟩 Dumb component             | 🟩 useRef       | 🟩 Nested components                          | 🟩 Redux Final Form      |
+| 🟩 Smart component            | 🟩 useCallback  | 🟩 Huge component trees                       | 🟩 Formik                |
+| 🟩 Rendering a component      | 🟩 useMemo      | 🟩 Passing all props with spread  everywhere  | 🟩 Babel                 |
+| 🟩 Props                      | 🟩 Custom Hooks | 🟩 Passing too much information to components | 🟩 Sass                  |
+| 🟩 State                      |                | 🟩 Overoptimizing performance                 | 🟩 Webpack               |
+| 🟩 Composing components       |                | 🟩 Async functions in useEffect               | 🟩 Hook form             |
+| 🟩 Extracting components      |                | 🟩 multiple useState hooks                    | 🟩 React DevTools        |
+| 🟩 Components lifecycle       |                |                                              | 🟩 Redux DevTools        |
+| 🟩 Conditional rendering      |                |                                              | 🟩 Jest                  |
+| 🟩 The Data Flows Down        |                |                                              | 🟩 React Testing Library |
+| 🟩 Handling Events            |                |                                              | 🟩 Reselect              |
+| 🟩 Prevent from Rendering     |                |                                              |                         |
+| 🟩 Multiple Rendering         |                |                                              |                         |
+| 🟩 Controlled Components      |                |                                              |                         |
+| 🟩 Lifting State Up           |                |                                              |                         |
+| 🟩 Composition vs Inheritance |                |                                              |                         |
+| 🟩 Code-Splitting             |                |                                              |                         |
+| 🟩 Bundling                   |                |                                              |                         |
+| 🟩 React.lazy                 |                |                                              |                         |
+| 🟩 Suspense and fallbacks     |                |                                              |                         |
+| 🟩 Named Exports              |                |                                              |                         |
+| 🟩 React Context              |                |                                              |                         |
+| 🟩 Context.Provider           |                |                                              |                         |
+| 🟩 Context.Consumer           |                |                                              |                         |
+| 🟩 Error Boundaries           |                |                                              |                         |
+| 🟩 Refs                       |                |                                              |                         |
+| 🟩 Forwarding refs            |                |                                              |                         |
+| 🟩 Fragments                  |                |                                              |                         |
+| 🟩 Higher-Order Components    |                |                                              |                         |
+| 🟩 Portals                    |                |                                              |                         |
+| 🟩 Profiler                   |                |                                              |                         |
+| 🟩 Render Props               |                |                                              |                         |
+| 🟩 Strict Mode                |                |                                              |                         |
+| 🟩 Uncontrolled Components    |                |                                              |                         |
+
 
 ## Multi-paradigm programming
 
